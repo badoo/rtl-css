@@ -1,24 +1,24 @@
 {
-  "name": "rtl-css",
-  "version": "1.0.0",
-  "description": "Utility for converting CSS files using external rules",
-  "main": "lib/index.js",
-  "bin": {
-    "rtl-css": "./bin/rtl-css.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/badoo/rtl-css.git"
-  },
-  "keywords": [
-    "CSS",
-    "RTL",
-    "LTR",
-    "transformation"
-  ],
-  "dependencies": {
-    "argparse": "~0.1.16"
-  },
-  "author": "Yuriy Nasretdinov",
-  "license": "MIT"
+	"name": "rtl-css",
+	"version": "1.0.0",
+	"description": "Utility for converting CSS files using external rules",
+	"main": "lib/index.js",
+	"bin": {
+		"rtl-css": "./bin/rtl-css.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/badoo/rtl-css.git"
+	},
+	"keywords": [
+		"CSS",
+		"RTL",
+		"LTR",
+		"transformation"
+	],
+	"dependencies": {
+		"argparse": "~0.1.16"
+	},
+	"author": "Yuriy Nasretdinov",
+	"license": "MIT"
 }
