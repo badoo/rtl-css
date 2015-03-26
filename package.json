@@ -1,0 +1,25 @@
+{
+  "name": "rtl-css",
+  "version": "1.0.0",
+  "description": "Google Protocol Buffers .proto files to JSON converter",
+  "main": "lib/index.js",
+  "bin": {
+    "rtl-css": "./bin/rtl-css.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sannis/node-proto2json.git"
+  },
+  "keywords": [
+    "protocol",
+    "buffers",
+    "protobuf",
+    "json",
+    "proto"
+  ],
+  "dependencies": {
+    "argparse": "~0.1.16"
+  },
+  "author": "Oleg Efimov",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+ololo
+{ left: 1px; /* comment */ float: left; margin: 1px rgba(1, 2) 2px 3px; }
+/* @rtl begin */
+{ Test RTL }
+/* @rtl end */
+selector {between: rtl; and: noflip}
+/* @noflip begin */
+_noflip_
+/* @noflip end */
+after noflip
+{ some_rule: some_value; }
