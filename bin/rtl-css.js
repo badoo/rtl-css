@@ -81,7 +81,7 @@ if (!fd) {
 }
 
 var result = fs.writeSync(fd, output);
-if (!fd) {
+if (!result) {
 	console.log("Cannot write output to " + args.output);
 	process.exit(1);
 }

@@ -1,5 +1,16 @@
 # Utility for converting CSS files using external rules
 
+[![NPM version][NPMVI]][NPMVURL] [![Build statusS][BSI]][BSURL] [![Code coverage][CSI]][CSURL]
+
+[NPMVI]: https://badge.fury.io/js/rtl-css.png
+[NPMVURL]: http://badge.fury.io/js/rtl-css
+[BSI]: https://secure.travis-ci.org/badoo/rtl-css.png?branch=master
+[BSURL]: http://travis-ci.org/badoo/rtl-css
+[CSI]: https://coveralls.io/repos/badoo/rtl-css/badge.png
+[CSURL]: https://coveralls.io/r/badoo/rtl-css
+
+-----
+
 An example config.json contains rules for RTL conversion
 
 Usage example: `node bin/rtl-css.js -i ./test/fixtures/input.css -c config.json -d rtl`
