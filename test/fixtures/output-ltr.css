@@ -1,0 +1,9 @@
+ololo
+{ left: 1px; /* comment */ float: left; margin: 1px rgba(1, 2) 2px 3px; }
+
+selector {between: rtl; and: noflip}
+
+_noflip_
+
+after noflip
+{ some_rule: some_value; }

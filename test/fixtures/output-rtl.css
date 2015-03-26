@@ -1,0 +1,12 @@
+After replacement: ' 1px rgba_replaced_value_0_ 2px 3px'
+ololo
+{ right: 1px; /* comment */ float: right; margin: 1px 3px 2px rgba(1, 2); }
+
+{ Test RTL }
+
+selector {between: rtl; and: noflip}
+
+_noflip_
+
+after noflip
+{ some_rule: some_value; }

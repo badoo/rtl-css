@@ -1,6 +1,6 @@
 # Utility for converting CSS files using external rules
 
-An example config.json contains rules for RTL convertion
+An example config.json contains rules for RTL conversion
 
 Usage example: `node bin/rtl-css.js -i ./test/fixtures/input.css -c config.json -d rtl`
 

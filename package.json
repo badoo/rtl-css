@@ -1,25 +1,24 @@
 {
   "name": "rtl-css",
   "version": "1.0.0",
-  "description": "Google Protocol Buffers .proto files to JSON converter",
+  "description": "Utility for converting CSS files using external rules",
   "main": "lib/index.js",
   "bin": {
     "rtl-css": "./bin/rtl-css.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sannis/node-proto2json.git"
+    "url": "https://github.com/badoo/rtl-css.git"
   },
   "keywords": [
-    "protocol",
-    "buffers",
-    "protobuf",
-    "json",
-    "proto"
+    "CSS",
+    "RTL",
+    "LTR",
+    "transformation"
   ],
   "dependencies": {
     "argparse": "~0.1.16"
   },
-  "author": "Oleg Efimov",
+  "author": "Yuriy Nasretdinov",
   "license": "MIT"
 }
