@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*!
- * Copyright (C) 2014 by Yuriy Nasretdinov
+ * Copyright (C) 2015 by Yuriy Nasretdinov
  *
  * See license text in LICENSE file
  */
