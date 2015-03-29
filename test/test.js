@@ -11,7 +11,7 @@
 var assert = require("assert");
 var fs = require("fs");
 
-var rtlCss = require('../');
+var rtlCss = require(process.env.LIB_COV ? '../lib-cov' : '../');
 
 var config = rtlCss.processConfig(JSON.parse(fs.readFileSync("config.json").toString()));
 var input = fs.readFileSync("test/fixtures/input.css").toString();
