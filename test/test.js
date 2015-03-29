@@ -11,7 +11,7 @@
 var assert = require("assert");
 var fs = require("fs");
 
-var rtlCss = require('../');
+var rtlCss = require(process.env.LIB_COV ? '../lib-cov' : '../');
 
 var config = rtlCss.processConfig(JSON.parse(fs.readFileSync("config.json").toString()));
 var input = fs.readFileSync("test/fixtures/input.css").toString();
@@ -25,5 +25,42 @@ describe("rlt-css", function () {
 
 	it("should properly convert file to rtl version", function () {
 		assert.equal(output_rtl, rtlCss.processCss(config, 'rtl', input));
+	});
+
+	describe("config", function () {
+		it("should contains 'properties' section", function () {
+			assert.throws(
+				function () {
+					rtlCss.processConfig({values: {}});
+				},
+				Error,
+				"section 'properties' is missing"
+			);
+		});
+
+		it("should contains 'values' section", function () {
+			assert.throws(
+				function () {
+					rtlCss.processConfig({properties: {}});
+				},
+				Error,
+				"section 'values' is missing"
+			);
+		});
+
+		it("should contains valid 'values' section", function () {
+			assert.throws(
+				function () {
+					rtlCss.processConfig({
+						properties: {},
+						values: [
+							"direction ltr = rtl"
+						]
+					});
+				},
+				Error,
+				"incorrect 'values' rule"
+			);
+		});
 	});
 });
